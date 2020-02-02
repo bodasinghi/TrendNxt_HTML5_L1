@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>xenaEvents</title>
+
+        <style>
+            body 
+			{
+				margin: auto;
+				width: 50%;
+                padding: 20px;
+                border-radius: 50px;
+                border: 3px solid #3297b7;
+            }
+            .logo 
+			{
+                margin: auto 125px;
+				font-family: Calibri;
+            }
+			.eventform
+			{
+				margin: auto 175px auto 175px;
+				font-family: Calibri;
+				
+			}
+			.eventform label
+			{
+				padding: 20px;
+			}
+			#submit
+			{
+				margin: 10px 100px;
+			}
+			
+			
+        </style>
+    </head>
+
+    <body>
+        <div class="logo">
+			<table>
+				<tr>
+					<td><img src="hot-air-balloons-sky.jpg" alt="Hot Air Balloon Event" width="100px" height="100px"></td>
+					<td><h1>Xena Events<h1></td>
+					<td><img src="hot-air-balloons-sky.jpg" alt="Hot Air Balloon Event" width="100px" height="100px"></td>
+				</tr>
+			</table>
+        </div>
+
+        <div class="eventform">
+            <form>
+			<table class="table"> 
+				<tr>
+					<td><label for="name">Name</label></td>
+					<td><input type="text" id="name" placeholder="Name" pattern="[A-Za-z]" required></td>
+				</tr>
+				
+				<tr>
+					<td><label for="age">Age</label></td>
+					<td><input type="number" id="age" placeholder="Age" min="18" required></td>
+				</tr>
+				
+				<tr>
+					<td><label for="email">Email ID</label></td>
+					<td><input type="email" id="email" placeholder="Email ID" required></td>
+				</tr>
+				
+				<tr>
+					<td><label for="city">City</label></td>
+					<td><input type="text" id="city" placeholder="City" list="cities" required></td>
+				</tr>
+
+                <datalist id="cities">
+                    <option value="Bangalore">
+                    <option value="Rajkot">
+                    <option value="Vijag">
+                </datalist>
+
+			</table>
+			<input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+
+    </body>
+</html>

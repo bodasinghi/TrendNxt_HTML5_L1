@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Awesome Online Videos</title>
+
+        <style>
+			body
+			{
+				text-align:center;
+				margin: auto 70px;
+			}
+            h1 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: #2D71ED;
+                font-size: 6vw;
+                margin-top: 0;
+            }
+
+            #sectionA, #sectionB {
+                text-align: center;
+            }
+            video {
+                display: block;
+                margin: 20px auto;
+                width: 100%;
+                max-width: 480px;
+            }
+            button {
+                background: #2D71ED;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 15px;
+                border-radius: 50px;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="sectionA" class="logo">
+			<table>
+				<tr>
+					<td><img src="video.png" alt="AwesomeOnlineVideos" width="300px" height="175px"></td>
+					<td><h1><sub><sub>Awesome Online Videos</sub></sub><h1></td>
+					<td><img src="video.png" alt="AwesomeOnlineVideos" width="300px" height="175px"></td>
+				</tr>
+			</table>
+        </div>
+
+        <div id="sectionB" class="video">
+            <video id="video" width="480">
+                <source src="videoSample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button onclick="play()">Play</button>
+            <button onclick="pause()">Pause</button>
+        </div>
+    </body>
+
+    <script>
+        var video = document.getElementById('video');
+        function play() {
+            video.play();
+        }
+
+        function pause() {
+            video.pause();
+        }
+    </script>
+</html>
